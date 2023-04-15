@@ -6,7 +6,7 @@
   <link href="http://ericyinhy.github.io/atom.xml" rel="self"/>
   
   <link href="http://ericyinhy.github.io/"/>
-  <updated>2023-04-15T08:00:25.876Z</updated>
+  <updated>2023-04-15T09:59:57.320Z</updated>
   <id>http://ericyinhy.github.io/</id>
   
   <author>
@@ -17,14 +17,35 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>kali下metasploit学习笔记</title>
+    <link href="http://ericyinhy.github.io/2023/04/15/kali%E4%B8%8Bmetasploit%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <id>http://ericyinhy.github.io/2023/04/15/kali%E4%B8%8Bmetasploit%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</id>
+    <published>2023-04-15T09:15:49.000Z</published>
+    <updated>2023-04-15T09:59:57.320Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;怎样使用metasploit-作者Ericyin&quot;&gt;&lt;a href=&quot;#怎样使用metasploit-作者Ericyin&quot; class=&quot;headerlink&quot; title=&quot;怎样使用metasploit</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>英语课本剧</title>
     <link href="http://ericyinhy.github.io/2023/04/12/%E8%8B%B1%E8%AF%AD%E8%AF%BE%E6%9C%AC%E5%89%A7/"/>
     <id>http://ericyinhy.github.io/2023/04/12/%E8%8B%B1%E8%AF%AD%E8%AF%BE%E6%9C%AC%E5%89%A7/</id>
     <published>2023-04-12T12:37:46.000Z</published>
-    <updated>2023-04-15T08:00:25.876Z</updated>
+    <updated>2023-04-15T09:15:27.237Z</updated>
     
     
-    <summary type="html">&lt;p&gt;明天有英语课本剧，wwr同学的ppt可谓相当炸裂&lt;br&gt;6&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;明天有英语课本剧，wwr同学的ppt可谓相当炸裂&lt;br&gt;6&lt;br&gt;&lt;img src=&quot;/img/ppt.png&quot; alt=&quot;ppt&quot;&gt;&lt;/p&gt;</summary>
     
     
     
@@ -57,7 +78,7 @@
     <link href="http://ericyinhy.github.io/2023/04/09/hello-world/"/>
     <id>http://ericyinhy.github.io/2023/04/09/hello-world/</id>
     <published>2023-04-09T08:28:20.305Z</published>
-    <updated>2023-04-15T06:48:01.062Z</updated>
+    <updated>2023-04-15T09:57:51.383Z</updated>
     
     
     <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
