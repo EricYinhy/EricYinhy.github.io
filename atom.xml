@@ -6,7 +6,7 @@
   <link href="http://ericyinhy.github.io/atom.xml" rel="self"/>
   
   <link href="http://ericyinhy.github.io/"/>
-  <updated>2023-06-17T14:32:44.233Z</updated>
+  <updated>2023-07-21T15:14:25.114Z</updated>
   <id>http://ericyinhy.github.io/</id>
   
   <author>
@@ -17,11 +17,27 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>拥有一个利用github通信的属于自己的木马病毒！</title>
+    <link href="http://ericyinhy.github.io/2023/07/21/%E6%8B%A5%E6%9C%89%E4%B8%80%E4%B8%AA%E5%88%A9%E7%94%A8github%E9%80%9A%E4%BF%A1%E7%9A%84%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E6%9C%A8%E9%A9%AC%E7%97%85%E6%AF%92%EF%BC%81/"/>
+    <id>http://ericyinhy.github.io/2023/07/21/%E6%8B%A5%E6%9C%89%E4%B8%80%E4%B8%AA%E5%88%A9%E7%94%A8github%E9%80%9A%E4%BF%A1%E7%9A%84%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E6%9C%A8%E9%A9%AC%E7%97%85%E6%AF%92%EF%BC%81/</id>
+    <published>2023-07-21T14:52:59.000Z</published>
+    <updated>2023-07-21T15:14:25.114Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;好久不写博客了，写博客是个好习惯XD&lt;/p&gt;
+&lt;h1 id=&quot;是的，正如标题所说，我做了一个C-amp-C（command-amp-control）通信的木马&quot;&gt;&lt;a href=&quot;#是的，正如标题所说，我做了一个C-amp-C（command-amp-control）通信的木马&quot; class=&quot;headerlink&quot; title=&quot;是的，正如标题所说，我做了一个C&amp;amp;C（command&amp;amp;control）通信的木马&quot;&gt;&lt;/a&gt;是的，正如标题所说，我做了一个C&amp;amp;C（command&amp;amp;control）通信的木马&lt;/h1&gt;</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
     <title>Python下Win32库自制MBR病毒</title>
     <link href="http://ericyinhy.github.io/2023/05/25/Python%E4%B8%8BWin32%E5%BA%93%E8%87%AA%E5%88%B6MBR%E7%97%85%E6%AF%92/"/>
     <id>http://ericyinhy.github.io/2023/05/25/Python%E4%B8%8BWin32%E5%BA%93%E8%87%AA%E5%88%B6MBR%E7%97%85%E6%AF%92/</id>
     <published>2023-05-25T13:46:37.000Z</published>
-    <updated>2023-06-17T14:32:44.233Z</updated>
+    <updated>2023-07-21T15:14:26.794Z</updated>
     
     
     <summary type="html">&lt;h1 id=&quot;Python-MBR-病毒！&quot;&gt;&lt;a href=&quot;#Python-MBR-病毒！&quot; class=&quot;headerlink&quot; title=&quot;Python MBR 病毒！&quot;&gt;&lt;/a&gt;Python MBR 病毒！&lt;/h1&gt;&lt;p&gt;&lt;em&gt;下载链接&lt;/em&gt;：&lt;/p&gt;
