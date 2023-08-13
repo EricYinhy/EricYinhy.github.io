@@ -113,6 +113,68 @@
     
     
     <article
+  id="post-《孤注一掷》同款！SQLMAP使用教程"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2023/08/13/%E3%80%8A%E5%AD%A4%E6%B3%A8%E4%B8%80%E6%8E%B7%E3%80%8B%E5%90%8C%E6%AC%BE%EF%BC%81SQLMAP%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"
+    >《孤注一掷》同款！SQLMAP使用教程</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/08/13/%E3%80%8A%E5%AD%A4%E6%B3%A8%E4%B8%80%E6%8E%B7%E3%80%8B%E5%90%8C%E6%AC%BE%EF%BC%81SQLMAP%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" class="article-date">
+  <time datetime="2023-08-13T03:17:46.000Z" itemprop="datePublished">2023-08-13</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>在电影中有这么一个场景：<br>{<br>潘生收到了诈骗团伙的高新利诱，准备辞去现在的工作，临走前还打开电脑，<br>用 <strong>SQLMAP</strong><br>        ___<br>       <strong>H</strong><br> ___ <em><strong>[“]</strong></em>__ ___ ___<br>|_ -| . [(]     | .’| . |<br>|<em>_<em>|</em>  [‘]_|</em>|<em>|__,|  <em>|<br>      |</em>|V…       |</em>|   </p>
+<p>把正在直播的公司服务器搞了个恶作剧，让直播画面满屏都是表情包<br>}<br>当时看到这个场景我还一激灵，这不就是SQLMAP嘛？潘生这不纯纯脚本小子嘛（doge</p>
+<p>咳咳，切回正题，那SQLMAP是干啥的捏？</p>
+<p>首先要知道SQL是啥：<br>SQL（结构化查询语言）</p>
+<p>那SQL是为谁服务的呢？<br>比如说，你在一个网站注册了一个用户，那网站把用户的名称和密码放在一个<em>数据库</em>里<br>诶，对，SQL就是专为数据库开发的语言，方便操作数据库</p>
+<p>SQLMAP就是干一些坏事，往数据库里注入有害的代码或者读取用户表单等等<br>SQL注入的本质是把用户输入的数据当作代码来执行，那么怎样才能成功的注入呢？</p>
+<p>首先要找到注入点：<br>在GET参数、POST参数、Cookie、Referer等地方尝试插入代码、符号或语句，尝试是否存在数据库参数读取行为</p>
+<p>有这样几个注入点（参考知乎）：<br>get注入<br>在get传参时写入参数，将SQl语句闭合，后面加写入自己的SQL语句。<br>post注入<br>通过post传参，原理与get一样，重要的是判断我们所输入的信息是否与数据库产生交互，其次判断SQL语句是如何闭合的。<br>有些网站通过查询cookie判断用户是否登录，需要与数据库进行交互，我们可以修改cookie的值，查找我们所需要的东西。或者通过报错注入是网页返回报错信息。<br>Referer注入<br>Referer正确写法应该是Referrer,因为http规定时写错只能将错就错，有些网站会记录ip和访问路径，例如百度就是通过Referer来统计网站流量，我们将访问路径进行SQL注入，同样也可以得到想要的信息。<br>XFF注入<br>在用户登录注册模块在 HTTP 头信息添加 X-Forwarded-for: 9.9.9.9’ ，用户在注册的时候，如果存在安全隐 患，会出现错误页面或者报错。从而导致注册或者登录用户失败。</p>
+<p>然后用扫描工具对数据库进行扫描：<br>Oracle<br>默认端口号：1521<br>SQL Server<br>默认端口号：1433<br>MySQL<br>默认端口号：3306<br>PostgreSql<br>默认端口号：5432</p>
+<p>最后一步就是用SQLMAP进行注入！（当然了，如果你很勇，想碰运气，可以忽略前面的步骤）<br>下载地址：<br><a target="_blank" rel="noopener" href="https://sqlmap.org/">sqlmap的官方主页</a><br>需要注意的是，你要在电脑上安装python3才可以运行，sqlmap是python写的（python真万能！<br>这里有一份命令使用大全：<a target="_blank" rel="noopener" href="https://blog.csdn.net/smli_ng/article/details/106026901">cnds星落.</a><br>你也可以用</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 sqlmap.py --<span class="built_in">help</span></span><br></pre></td></tr></table></figure>
+<p>来快速查看命令</p>
+<p>本文作者也是个小白，请各位大佬看到有啥纰漏，直接在评论区开骂！</p>
+<p>注：请在合法的条件下进行渗透测试，违者自负！</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
+    <article
   id="post-拥有一个利用github通信的属于自己的木马病毒！"
   class="article article-type-post"
   itemscope

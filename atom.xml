@@ -6,7 +6,7 @@
   <link href="http://ericyinhy.github.io/atom.xml" rel="self"/>
   
   <link href="http://ericyinhy.github.io/"/>
-  <updated>2023-07-22T05:48:00.957Z</updated>
+  <updated>2023-08-13T04:46:53.578Z</updated>
   <id>http://ericyinhy.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《孤注一掷》同款！SQLMAP使用教程</title>
+    <link href="http://ericyinhy.github.io/2023/08/13/%E3%80%8A%E5%AD%A4%E6%B3%A8%E4%B8%80%E6%8E%B7%E3%80%8B%E5%90%8C%E6%AC%BE%EF%BC%81SQLMAP%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/"/>
+    <id>http://ericyinhy.github.io/2023/08/13/%E3%80%8A%E5%AD%A4%E6%B3%A8%E4%B8%80%E6%8E%B7%E3%80%8B%E5%90%8C%E6%AC%BE%EF%BC%81SQLMAP%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/</id>
+    <published>2023-08-13T03:17:46.000Z</published>
+    <updated>2023-08-13T04:46:53.578Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;在电影中有这么一个场景：&lt;br&gt;{&lt;br&gt;潘生收到了诈骗团伙的高新利诱，准备辞去现在的工作，临走前还打开电脑，&lt;br&gt;用 &lt;strong&gt;SQLMAP&lt;/strong&gt;&lt;br&gt;        ___&lt;br&gt;       &lt;strong&gt;H&lt;/strong&gt;&lt;br&gt; ___</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>拥有一个利用github通信的属于自己的木马病毒！</title>
