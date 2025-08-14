@@ -113,6 +113,123 @@
     
     
     <article
+  id="post-Pwnagotchi折腾记"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2025/08/14/Pwnagotchi%E6%8A%98%E8%85%BE%E8%AE%B0/"
+    >Pwnagotchi折腾记</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2025/08/14/Pwnagotchi%E6%8A%98%E8%85%BE%E8%AE%B0/" class="article-date">
+  <time datetime="2025-08-14T14:09:54.000Z" itemprop="datePublished">2025-08-14</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+  <p>刚放暑假的时候，大概7月份，我看到了一个很好玩的项目，Pwnagotchi<br>这是一个电子宠物，类似于拓麻歌子，但是它实际上是一个用于wifi破解的的网络安全工具。<br>当时就觉得很有意思，想做一个玩玩。奈何囊中羞涩，想省点钱，之后再买。<br>到了前两天，有马内了，我便开始了我的折腾之路。</p>
+<p>#材料与配件<br>一个waveshare的2.13寸墨水屏(v4)<br>raspberry pi zero wh(wh是带排针的版本，和zero w其实没啥区别)<br>一个ups模块<br>还有一张tf卡<br>以及，勇于折腾的精神（doge）</p>
+<p>#第一回折腾:OTG(On_To_Go)驱动</p>
+<p>收到快递之后我就兴冲冲的刷写固件，放到rasp里运行！</p>
+<p>紧接着ssh连接树莓派</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh pi@10.0.0.2</span><br></pre></td></tr></table></figure>
+
+<p>诶怎么没反应<br>哦原来是忘记打驱动了，电脑没有成功把树莓派识别为网络设备</p>
+<p>上网下载安装好驱动，搞定！了吗？</p>
+<p>屏幕并没有点亮</p>
+<p>#第二回折腾:屏幕<br>能正常运行，能看到指示灯闪烁，就是不知道画面是啥样！<br>这就很难受了，屏幕用不上<br>我仔细看了看固件，是2021年更新的<br>我又看了看支持的屏幕，发现并没说支持v4!<br>这就很麻烦了</p>
+<p>不过，这样的问题肯定不是我一个人遇到，所以，我准备向前人借鉴：<em>查看issue</em>!</p>
+<p>我稍加搜索，就发现确实不止有一个人提交了关于v4屏幕不适配问题的issue，仔细观察之下发现有人提交了更新，是对v4屏幕做了支持。</p>
+<p>我就纳闷了，有对v4屏幕的支持，为啥屏幕点不亮？<br>一看，原来是2022年的更新，但是最新版本的固件在2021年，完全没跟上！</p>
+<p>这期间我看到了有人说第三方固件好用，有人说用xx.xx.xx的成功了。但我就是不知道怎么下手这个问题</p>
+<p>于是我去问了ai,deepseek。我开了联网搜索模式。deepseek给我讲了一大堆解决方法，但是好多资料来自于gitee而不是github.<br>正当我在想这些有没有用时,我翻看了deepseek搜索到的几个网页，其中有一个发送在b站的图文教程。<br>我点了进去，这好像是我之前看的那个教程，但是因为资料不全最后没成功。这难道就是当时缺失的资料吗？<br>这篇文章解说如何对v3屏幕进行支持。我看到这个up的视频里有说v3的驱动兼容v4.<br>我感觉我抓到了救命稻草！这不就是解决方案吗?!太好了！<br><a target="_blank" rel="noopener" href="https://www.bilibili.com/opus/647920534219128835?spm_id_from=333.1387.0.0">原文_来自b站up主“太阳拎着月亮”</a><br>文章主要的内容就是把master branch的代码下载，然后进行修改，在导入到pwnagotchi中，然后删掉pwnagotchi里原来的，再替换上新的。<br>我按照它说的做了，但是屏幕还是没有点亮。<br>此时我已经耗费了很多时间，只能放到明天再考虑了。</p>
+<p>#第三回折腾:偷梁换柱<br>第二天，我再次翻阅github上的issue,再看昨天的那个文档。<br>我发现一件事，这个up主下载的源代码版本比我下载的要低。<br>也就是说，我更改代码再放入的行为是完全没必要的！因为在后续已经更新了！可以直接放入！<br>而且up主的文章也提供了很好的思路，那就是“偷梁换柱”，我在不修改代码的情况下直接放入，应该就能成功。<br>之后不出所料，成功点亮！</p>
+<p>折腾好像结束了….吗？我还在继续折腾，我到现在只是成功的配置了pwnagotchi的基础设置。后面能探索的东西还有很多！现在pwnagotchi正在我电脑旁运行着，等待着我的进一步开发和探索。</p>
+<p>折腾永无止境，人类就是在折腾中不断学习。好了！现在，不折腾了，睡觉！</p>
+<p>2025&#x2F;8&#x2F;14 22:48</p>
+<p>endl</p>
+ 
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
+    <article
+  id="post-树莓派系统折腾记"
+  class="article article-type-post"
+  itemscope
+  itemprop="blogPost"
+  data-scroll-reveal
+>
+  <div class="article-inner">
+    
+    <header class="article-header">
+       
+<h2 itemprop="name">
+  <a class="article-title" href="/2023/12/17/%E6%A0%91%E8%8E%93%E6%B4%BE%E7%B3%BB%E7%BB%9F%E6%8A%98%E8%85%BE%E8%AE%B0/"
+    >树莓派系统折腾记</a> 
+</h2>
+ 
+
+      
+    </header>
+     
+    <div class="article-meta">
+      <a href="/2023/12/17/%E6%A0%91%E8%8E%93%E6%B4%BE%E7%B3%BB%E7%BB%9F%E6%8A%98%E8%85%BE%E8%AE%B0/" class="article-date">
+  <time datetime="2023-12-17T13:22:51.000Z" itemprop="datePublished">2023-12-17</time>
+</a>    
+    </div>
+      
+    <div class="article-entry" itemprop="articleBody">
+       
+   
+      <!-- reward -->
+      
+    </div>
+    
+
+    <!-- copyright -->
+    
+    <footer class="article-footer">
+       
+    </footer>
+  </div>
+
+    
+ 
+   
+  
+</article>
+
+    
+    <article
   id="post-《孤注一掷》同款！SQLMAP使用教程"
   class="article article-type-post"
   itemscope
@@ -447,7 +564,7 @@
     <ul>
       <li>
         Copyrights &copy;
-        2023
+        2023-2025
         <i class="ri-heart-fill heart_icon"></i> Eric
       </li>
     </ul>

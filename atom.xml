@@ -6,7 +6,7 @@
   <link href="http://ericyinhy.github.io/atom.xml" rel="self"/>
   
   <link href="http://ericyinhy.github.io/"/>
-  <updated>2023-08-13T04:46:53.578Z</updated>
+  <updated>2025-08-14T14:48:12.788Z</updated>
   <id>http://ericyinhy.github.io/</id>
   
   <author>
@@ -15,6 +15,40 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Pwnagotchi折腾记</title>
+    <link href="http://ericyinhy.github.io/2025/08/14/Pwnagotchi%E6%8A%98%E8%85%BE%E8%AE%B0/"/>
+    <id>http://ericyinhy.github.io/2025/08/14/Pwnagotchi%E6%8A%98%E8%85%BE%E8%AE%B0/</id>
+    <published>2025-08-14T14:09:54.000Z</published>
+    <updated>2025-08-14T14:48:12.788Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;刚放暑假的时候，大概7月份，我看到了一个很好玩的项目，Pwnagotchi&lt;br&gt;这是一个电子宠物，类似于拓麻歌子，但是它实际上是一个用于wifi破解的的网络安全工具。&lt;br&gt;当时就觉得很有意思，想做一个玩玩。奈何囊中羞涩，想省点钱，之后再买。&lt;br&gt;到了前两天，有马内了，</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>树莓派系统折腾记</title>
+    <link href="http://ericyinhy.github.io/2023/12/17/%E6%A0%91%E8%8E%93%E6%B4%BE%E7%B3%BB%E7%BB%9F%E6%8A%98%E8%85%BE%E8%AE%B0/"/>
+    <id>http://ericyinhy.github.io/2023/12/17/%E6%A0%91%E8%8E%93%E6%B4%BE%E7%B3%BB%E7%BB%9F%E6%8A%98%E8%85%BE%E8%AE%B0/</id>
+    <published>2023-12-17T13:22:51.000Z</published>
+    <updated>2023-12-17T13:27:23.107Z</updated>
+    
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>《孤注一掷》同款！SQLMAP使用教程</title>
